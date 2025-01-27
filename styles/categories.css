@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main h2{
+    text-align: center;
+    padding: 89px 0;
+    background-color: var(--color-green);
+}
+main section{
+    padding: 56px 72px;
+}
+.category__section p{
+    width: 765px;
+}
+.category__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.category__item{
+    position: relative;
+}
+.category__item span{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: var(--color-heading);
+    color: var(--color-white);
+    padding: 8px 16px;
+    border-radius: 8px;
+}

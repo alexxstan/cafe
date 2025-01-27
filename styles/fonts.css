@@ -32,14 +32,18 @@ h2 span{
 .description__marks{
     color: var(--color-blue-dark);
 }
-.pick__description{
+.pick__description, .restauran, .categories a, .category p, .category__section p, .category__item span{
     font-family: 'Hind';
     font-size: 18px;
     line-height: 28.82px;
 }
-.cafes h3{
+.cafes h3, .categories h3, .category__section h3{
     font-family: 'Montserrat';
     font-size: 35.16px;
     line-height: 48px;
     margin-bottom: 32px;
+}
+#award h2{
+    padding: 112px 0 40px 56px;
+    width: 500px;
 }

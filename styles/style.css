@@ -1,36 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-header{
-    padding: 8px 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header .logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 1000;
-    padding: 11px 9px;
-}
-header nav ul{
-    display: flex;
-    gap: 8px;
-    list-style-type: none;
-}
-header nav ul li{
-    padding: 13px 24px;
-}
-header nav ul li a{
-    font-size: 18px;
-    line-height: 28.2px;
-    font-family: 'Hind', sans-serif;
-    color: var(--color-heading);  
-    text-decoration: none;
 }
 #banner {
     background-color: var(--color-blue);
@@ -69,7 +39,7 @@ header nav ul li a{
     position: relative;
     z-index: 1;
 }
-.cafes{
+.cafes, .categories{
     background-color: var(--color-white);
     position: relative;
     padding: 72px 25px 63px 56px;
@@ -121,28 +91,40 @@ header nav ul li a{
     height: 220px;
     border-radius: 8px;
 }
-
-
-footer{
-    background-color: var(--color-text);
+#award a{
+    margin-left: 56px;
+    padding: 12px 24px;
+    background-color: var(--color-heading);
     color: var(--color-white);
-    padding: 48px 71px 257px 209px;
+    border-radius: 4px;
 }
-.footer__container{
-    position: relative;
+.restauran__row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.restauran{
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+.categories a{
+    position: absolute;
+    top: 72px;
+    right: 25px;
+    color: var(--color-heading);
+}
+.categories__list{
     display: flex;
     justify-content: space-between;
 }
-footer img{
-    position: relative;
-    bottom: 0;
-    width: 120px;
+.category{
+    border-radius: 8px;
+    padding: 24px 48px;
+    text-align: center;
 }
-footer section{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-footer a{
-    color: var(--color-white);
+.category p{
+    padding-top: 16px;
 }
