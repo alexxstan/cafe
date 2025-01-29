@@ -73,8 +73,6 @@ body{
     background-color: var(--color-grey);
     color: var(--color-grey-dark);
 }
-
-
 #award{
     background-color: var(--color-green);
     position: relative;
