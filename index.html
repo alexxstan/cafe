@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/colors.css">
-    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
     <title>Mealdrop</title>
 </head>
 <body>
     <header>
+        <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+        </div>
         <div class="logo">
             <img src="assets/images/logo.svg" alt="logo">
             <span>MealDrop</span>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="">All restaurants</a></li>
-                <li><a href="">Contacts</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="pages/categories.html">All categories</a></li>
+                <li><a href="pages/contacts.html">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +35,7 @@
                 <h2><span>Hungry?</span> Find your next meal</h2>
                 <div class="image-wrapper">
                     <a href="#" class="link">See all restaurants</a>
-                    <img src="assets/images/banner.svg" alt="banner" class="banner-image">
+                    <img src="assets/images/banner.svg" alt="banner" class="banner__image">
                 </div>
             </div>
         </section>

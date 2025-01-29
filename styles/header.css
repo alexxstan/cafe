@@ -1,8 +1,23 @@
 header{
     padding: 8px 56px;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header .burger{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    padding: 6px 3px;
+}
+header .burger__line{
+    width: 18px;
+    height: 1px;
+    background-color: var(--color-heading);
 }
 header .logo{
     display: flex;
@@ -26,4 +41,24 @@ header nav ul li a{
     font-family: 'Hind', sans-serif;
     color: var(--color-heading);  
     text-decoration: none;
+}
+@media (max-width: 630px) {
+    header{
+        justify-content: center;
+    }
+    header .burger{
+        display: flex;
+    }
+    header nav{
+        display: none;
+    }
+    header .logo{
+        padding: 0;
+    }
+    header .logo img{
+        height: 42px;
+    }
+    header .logo span{
+        display: none;
+    }
 }

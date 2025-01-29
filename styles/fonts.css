@@ -47,3 +47,22 @@ h2 span{
     padding: 112px 0 40px 56px;
     width: 500px;
 }
+@media (max-width: 630px) {
+    h2{
+        font-size: 38px
+    }
+    .cafes h3, .categories h3{
+        font-size: 31px;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+    #award h2{
+        padding: 32px 0 24px 0;
+        text-align: center;
+        width: auto;
+    }
+    .restauran p{
+        width: 90px;
+        font-size: 10.5px;
+    }
+}

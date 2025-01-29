@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main h2{
+    padding: 56px 0;
+    text-align: center;
+    background-color: var(--color-green);
+}
+.contacts{
+    background-color: var(--color-white);
+    position: relative;
+    padding: 72px 25px 63px 56px;
+    z-index: 3;
+}
+.picks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pick{
+    padding-bottom: 16px;
+    background-color: var(--color-light-grey);
+    border-radius: 8px;
+}
+.description{
+    margin-top: 16px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.comfort__food{
+    margin-top: 16px;
+}
+.comfort__food a{
+    padding: 3px 8px;
+    background-color: var(--color-grey);
+    color: var(--color-grey-dark);
+}
+.contacts img {
+    width: 427px;
+    height: 240px;
+}
