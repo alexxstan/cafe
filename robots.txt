@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexxstan.github.io/cafe/sitemap.xml
