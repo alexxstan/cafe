@@ -10,8 +10,16 @@ main h2{
 .contacts{
     background-color: var(--color-white);
     position: relative;
-    padding: 72px 25px 63px 56px;
+    padding: 72px 56px;
     z-index: 3;
+}
+.marks__link{
+    position: absolute;
+    top: 72px;
+    right: 56px;
+    text-decoration: none;
+    padding: 13px 24px;
+    color: var(--color-heading);
 }
 .picks{
     display: flex;
