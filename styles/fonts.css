@@ -22,7 +22,7 @@ h2 span{
     line-height: 28.82px;
     text-decoration: none;
 }
-.description h4{
+.description h4, .marks h4, .form__section h4{
     font-family: 'Montserrat';
     font-size: 22.5px;
     line-height: 32px;
@@ -31,12 +31,12 @@ h2 span{
 .description__marks{
     color: var(--color-blue-dark);
 }
-.pick__description, .restauran, .categories a, .category p, .category__section p, .category__item span{
+label, .pick__description, .restauran, .categories a, .category p, .category__section p, .about__section p, .category__item span, .mark p, .about__item span, .marks__link{
     font-family: 'Hind';
     font-size: 18px;
     line-height: 28.82px;
 }
-.cafes h3, .categories h3, .category__section h3, .contacts h3{
+.cafes h3, .categories h3, .category__section h3, .contacts h3, .marks h3, .about__section h3, .form__section h3{
     font-family: 'Montserrat';
     font-size: 35.16px;
     line-height: 48px;
@@ -50,7 +50,7 @@ h2 span{
     h2{
         font-size: 38px
     }
-    .cafes h3, .categories h3{
+    .cafes h3, .categories h3, .category__section h3, .contacts h3, .marks h3, .about__section h3, .form__section h3{
         font-size: 31px;
         line-height: 40px;
         letter-spacing: -1px;
