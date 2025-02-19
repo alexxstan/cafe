@@ -46,6 +46,17 @@ label, .pick__description, .restauran, .categories a, .category p, .category__se
     padding: 112px 0 40px 56px;
     width: 500px;
 }
+@media (max-width: 1200px) {
+    #award h2{
+        padding: 32px 0 24px 0;
+    }
+}
+@media (max-width: 768px) {
+    .restauran p{
+        width: 90px;
+        font-size: 10.5px;
+    }
+}
 @media (max-width: 630px) {
     h2{
         font-size: 38px
@@ -60,8 +71,5 @@ label, .pick__description, .restauran, .categories a, .category p, .category__se
         text-align: center;
         width: auto;
     }
-    .restauran p{
-        width: 90px;
-        font-size: 10.5px;
-    }
+    
 }

@@ -25,6 +25,7 @@ main h2{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: clamp(20px, 1vw, 50px)
 }
 .pick{
     padding-bottom: 16px;
@@ -54,6 +55,11 @@ main h2{
 @media (max-width: 1000px) {
     .contacts{
         padding: 32px 16px;
+    }
+    .marks__link{
+        top: 32px;
+        right: 16px;
+        padding: 13px 0;
     }
     .contacts img {
         width: 328px;
