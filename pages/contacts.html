@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/colors.css">
     <link rel="stylesheet" href="../styles/contacts.css">
     <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/theme.css">
 </head>
 <body>
     <header>
@@ -19,8 +20,14 @@
             <div class="burger__line"></div>
         </div>
         <div class="logo">
-            <img src="../assets/images/logo.svg" alt="logo">
+            <img data-src="../assets/images/logo.svg" alt="logo" class="lazy">
             <span>MealDrop</span>
+        </div>
+        <div class="lightbulb-container">
+            <div class="lightbulb">
+                <div class="string"></div>
+                <div class="bulb"></div>
+            </div>
         </div>
         <nav>
             <ul>
@@ -32,50 +39,53 @@
         </nav>
     </header>
     <main>
-        <h2>Contacts</h2>
+        <h2 class="green__head">Контакты</h2>
         <section id="favourite" class="contacts">
-            <h3>Contacts</h3>
-            <a class="marks__link" href="./marks.html">Marks</a>
+            <h3>Контакты</h3>
+            <a class="marks__link" href="./marks.html">Отзывы</a>
             <div class="picks">
                 <div class="pick">
-                    <img src="../assets/images/restaurans/artissan.jfif" alt="cafe">
+                    <img data-src="../assets/images/restaurans/artissan.jfif" alt="cafe" class="lazy">
                     <div class="description">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22061.58822588857!2d12.5688717!3d55.6919995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525315e7a59919%3A0x9176f2485e069ac5!2sThe%20Artisan%20Copenhagen!5e0!3m2!1sru!2sru!4v1622530629000!5m2!1sru!2sru">
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22061.58822588857!2d27.5607632!3d53.904353!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x46dbcfebcb12c407%3A0xb33cf306cb98d459!2z0JfQvtC70LDQudC-0L3QvtC10YDQvtC-0L3QvtC10L3QuNin0L3Qu9C-0YDQvtC10YDQvtC-0L3QvtC10L3Qu9C-0YDQvtC10YDQvtC-0L3QvtC10L3Qu9C-0YDQvtC10!5e0!3m2!1sru!2sru!4v1622530629000!5m2!1sru!2sru&output=embed&z=16">
                         </iframe>
-                        <h4>The artissan</h4>
-                        <p class="description__marks">★ 4.2  Very Good</p>
-                        <p class="pick__description">+1 (234) 56-78-90</p>
+                        <h4>Пикми кафе</h4>
+                        <p class="description__marks">★ 4.2  Очень хорошо</p>
+                        <p class="pick__description">+375-29-831-13-07</p>
+                        <p class="pick__description">Донат 9112888891121444</p>
                         <div class="comfort__food">
-                            <a target="_blank" href="https://www.google.com/maps/place/The+Artisan+Copenhagen/@55.6919069,11.2410856,8z/data=!4m10!1m2!2m1!1sThe+artissan!3m6!1s0x46525315e7a59919:0x9176f2485e069ac5!8m2!3d55.6919995!4d12.5688717!15sCgtUaGUgYXJ0aXNhbloNIgt0aGUgYXJ0aXNhbpIBC2NvZmZlZV9zaG9w4AEA!16s%2Fg%2F11r3vwhqqb?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D" class="link">Address</a>
+                            <a target="_blank" href="https://www.google.com/maps/place/Pinky+Bandinsky/@53.9024767,27.5483706,16z/data=!4m6!3m5!1s0x46dbcfebcb12c407:0xb33cf306cb98d459!8m2!3d53.9024763!4d27.5529467!16s/g/11b8b3mf48?entry=ttu&g_ep=EgoyMDI1MDIyNC4wIKXMDSoASAFQAw==" class="link">Адрес</a>
                         </div>
                     </div>
                 </div>
                 <div class="pick">
-                    <img src="../assets/images/restaurans/artissan.jfif" alt="cafe">
+                    <img data-src="../assets/images/restaurans/artissan.jfif" alt="cafe" class="lazy">
                     <div class="description">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22061.58822588857!2d12.5688717!3d55.6919995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525315e7a59919%3A0x9176f2485e069ac5!2sThe%20Artisan%20Copenhagen!5e0!3m2!1sru!2sru!4v1622530629000!5m2!1sru!2sru">
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22061.58822588857!2d27.5607632!3d53.904353!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x46dbcfebcb12c407%3A0xb33cf306cb98d459!2z0JfQvtC70LDQudC-0L3QvtC10YDQvtC-0L3QvtC10L3QuNin0L3Qu9C-0YDQvtC10YDQvtC-0L3QvtC10L3Qu9C-0YDQvtC10YDQvtC-0L3QvtC10L3Qu9C-0YDQvtC10!5e0!3m2!1sru!2sru!4v1622530629000!5m2!1sru!2sru&output=embed&z=16">
                         </iframe>
-                        <h4>The artissan</h4>
-                        <p class="description__marks">★ 4.2  Very Good</p>
-                        <p class="pick__description">+1 (234) 56-78-90</p>
+                        <h4>Пикми кафе</h4>
+                        <p class="description__marks">★ 4.2  Очень хорошо</p>
+                        <p class="pick__description">+375-29-831-13-07</p>
+                        <p class="pick__description">Донат 9112888891121444</p>
                         <div class="comfort__food">
-                            <a target="_blank" href="https://www.google.com/maps/place/The+Artisan+Copenhagen/@55.6919069,11.2410856,8z/data=!4m10!1m2!2m1!1sThe+artissan!3m6!1s0x46525315e7a59919:0x9176f2485e069ac5!8m2!3d55.6919995!4d12.5688717!15sCgtUaGUgYXJ0aXNhbloNIgt0aGUgYXJ0aXNhbpIBC2NvZmZlZV9zaG9w4AEA!16s%2Fg%2F11r3vwhqqb?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D" class="link">Address</a>
+                            <a target="_blank" href="https://www.google.com/maps/place/Pinky+Bandinsky/@53.9024767,27.5483706,16z/data=!4m6!3m5!1s0x46dbcfebcb12c407:0xb33cf306cb98d459!8m2!3d53.9024763!4d27.5529467!16s/g/11b8b3mf48?entry=ttu&g_ep=EgoyMDI1MDIyNC4wIKXMDSoASAFQAw==" class="link">Адрес</a>
                         </div>
                     </div>
                 </div>
                 <div class="pick">
-                    <img src="../assets/images/restaurans/artissan.jfif" alt="cafe">
+                    <img data-src="../assets/images/restaurans/artissan.jfif" alt="cafe" class="lazy">
                     <div class="description">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22061.58822588857!2d12.5688717!3d55.6919995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525315e7a59919%3A0x9176f2485e069ac5!2sThe%20Artisan%20Copenhagen!5e0!3m2!1sru!2sru!4v1622530629000!5m2!1sru!2sru">
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22061.58822588857!2d27.5607632!3d53.904353!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x46dbcfebcb12c407%3A0xb33cf306cb98d459!2z0JfQvtC70LDQudC-0L3QvtC10YDQvtC-0L3QvtC10L3QuNin0L3Qu9C-0YDQvtC10YDQvtC-0L3QvtC10L3Qu9C-0YDQvtC10YDQvtC-0L3QvtC10L3Qu9C-0YDQvtC10!5e0!3m2!1sru!2sru!4v1622530629000!5m2!1sru!2sru&output=embed&z=16">
                         </iframe>
-                        <h4>The artissan</h4>
-                        <p class="description__marks">★ 4.2  Very Good</p>
-                        <p class="pick__description">+1 (234) 56-78-90</p>
+                        <h4>Пикми кафе</h4>
+                        <p class="description__marks">★ 4.2  Очень хорошо</p>
+                        <p class="pick__description">+375-29-831-13-07</p>
+                        <p class="pick__description">Донат 9112888891121444</p>
                         <div class="comfort__food">
-                            <a target="_blank" href="https://www.google.com/maps/place/The+Artisan+Copenhagen/@55.6919069,11.2410856,8z/data=!4m10!1m2!2m1!1sThe+artissan!3m6!1s0x46525315e7a59919:0x9176f2485e069ac5!8m2!3d55.6919995!4d12.5688717!15sCgtUaGUgYXJ0aXNhbloNIgt0aGUgYXJ0aXNhbpIBC2NvZmZlZV9zaG9w4AEA!16s%2Fg%2F11r3vwhqqb?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D" class="link">Address</a>
+                            <a target="_blank" href="https://www.google.com/maps/place/Pinky+Bandinsky/@53.9024767,27.5483706,16z/data=!4m6!3m5!1s0x46dbcfebcb12c407:0xb33cf306cb98d459!8m2!3d53.9024763!4d27.5529467!16s%2Fg%2F11b8b3mf48?entry=ttu&g_ep=EgoyMDI1MDIyNC4wIKXMDSoASAFQAw%3D%3D" class="link">Адрес</a>
                         </div>
                     </div>
                 </div>
@@ -84,12 +94,13 @@
     </main>
     <footer>
         <div class="footer__container">
-            <img src="../assets/images/logo.svg" alt="logo">
+            <img data-src="../assets/images/logo.svg" alt="logo" class="lazy">
             <section>
                 <h3>Discover us</h3>
                 <a href="../index.html" class="link">Home</a>
-                <a href="categories.html" class="link">Categories</a>
-                <a href="contacts.html" class="link">About</a>
+                <a href="categories.html" class="link">Menu</a>
+                <a href="contacts.html" class="link">Contacts</a>
+                <a href="about.html" class="link">About</a>
             </section>
             <section>
                 <h3>Our social media</h3>
@@ -99,10 +110,12 @@
             </section>
             <section>
                 <h3>Check our apps</h3>
-                <a href="#" class="link">Link</a>
-                <a href="#" class="link">Link</a>
+                <a href="https://www.facebook.com/SMARTCOFFEEBLR" class="link">Link</a>
+                <a href="https://www.instagram.com/varkacoffee.official/" class="link">Link</a>
             </section>
         </div>
-    </footer> 
+    </footer>
+    <script src="../scripts/lazyLoading.js"></script>
+    <script src="../scripts/theme.js"></script>
 </body>
 </html>

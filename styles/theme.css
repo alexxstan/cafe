@@ -1,0 +1,76 @@
+.lightbulb-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.lightbulb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.string {
+    width: 2px;
+    height: 40px;
+    background: black;
+    transform: translateX(-50%);
+    transition: transform 0.2s ease;
+}
+.bulb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #f5c51c;
+    position: relative;
+    box-shadow: 0 0 20px rgba(245, 197, 28, 0.5);
+}
+#dark__theme .bulb {
+    background-color: #f5c51c;
+}
+#dark__theme, #dark__theme a {
+    color: var(--color-white);
+}
+#dark__theme header {
+    background-color: var(--color-heading);
+}
+#dark__theme #banner {
+    background-color: var(--color-text);
+}
+#dark__theme .burger__line{
+    background-color: var(--color-white);
+}
+#dark__theme .cafes, #dark__theme .categories, #dark__theme .category__section, #dark__theme .form__section, #dark__theme .marks{
+    background-color: var(--color-heading);
+}
+#dark__theme .pick{
+    background-color: var(--color-text);
+}
+#dark__theme .pick h4, #dark__theme .form__section h4, #dark__theme .marks h4{
+    color: var(--color-white);
+}
+#dark__theme .pick a{
+    background-color: var(--color-light-dark);
+    color: #A6A6A6;
+}
+#dark__theme #award{
+    background-color: var(--color-text);
+}
+#dark__theme #award p{
+    color: var(--color-text);
+}
+#dark__theme .category{
+    background-color: var(--color-text);
+}
+#dark__theme .green__link{
+    background-color: var(--color-green);
+    color: var(--color-heading);
+}
+#dark__theme .green__head{
+    color: var(--color-heading);
+}
+#dark__theme .about__section, #dark__theme .contacts{
+    background-color: var(--color-heading);
+}
+#dark__theme .form__section .line div, #dark__theme .form__section button, #dark__theme .marks button{
+    background-color: var(--color-light-dark);
+}
