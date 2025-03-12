@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/about.css">
     <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/theme.css">
 </head>
 <body>
     <header>
@@ -19,8 +20,14 @@
             <div class="burger__line"></div>
         </div>
         <div class="logo">
-            <img src="../assets/images/logo.svg" alt="logo">
+            <img data-src="../assets/images/logo.svg" alt="logo" class="lazy">
             <span>MealDrop</span>
+        </div>
+        <div class="lightbulb-container">
+            <div class="lightbulb">
+                <div class="string"></div>
+                <div class="bulb"></div>
+            </div>
         </div>
         <nav>
             <ul>
@@ -32,33 +39,33 @@
         </nav>
     </header>
     <main>
-        <h2>About</h2>
+        <h2 class="green__head">About</h2>
         <section class="about__section">
             <h3>Our team</h3>
             <p>Whatever your coffee craving, our passionate team is here to brew it just for you. Whether you're in the mood for a classic espresso or a unique seasonal blend, meet the talented baristas who make it all possible below. </p>
             <div class="about__list">
                 <div class="about__item">
-                    <img src="../assets/images/team/alex.jpg" alt="alex">
+                    <img data-src="../assets/images/team/alex.jpg" alt="alex" class="lazy">
                     <span>Alex, SEO</span>
                 </div>
                 <div class="about__item">
-                    <img src="../assets/images/team/alexjr.jpg" alt="burgers">
+                    <img data-src="../assets/images/team/alexjr.jpg" alt="alexjr" class="lazy">
                     <span>Alex JR, Manager</span>
                 </div>
                 <div class="about__item">
-                    <img src="../assets/images/team/ignat.jpg" alt="ignat">
+                    <img data-src="../assets/images/team/ignat.jpg" alt="ignat" class="lazy">
                     <span>Ignat, sponsor</span>
                 </div>
                 <div class="about__item">
-                    <img src="../assets/images/team/natalia.jpg" alt="natalia">
+                    <img data-src="../assets/images/team/natalia.jpg" alt="natalia" class="lazy">
                     <span>Natalia, officiant</span>
                 </div>
                 <div class="about__item">
-                    <img src="../assets/images/team/vlad.jpg" alt="asian">
+                    <img data-src="../assets/images/team/vlad.jpg" alt="vlad" class="lazy">
                     <span>Vlad, officiant</span>
                 </div>
                 <div class="about__item">
-                    <img src="../assets/images/team/andrew.jpg" alt="andrew">
+                    <img data-src="../assets/images/team/andrew.jpg" alt="andrew" class="lazy">
                     <span>Andrew, officiant</span>
                 </div>
             </div>
@@ -66,12 +73,13 @@
     </main>
     <footer>
         <div class="footer__container">
-            <img src="../assets/images/logo.svg" alt="logo">
+            <img data-src="../assets/images/logo.svg" alt="logo" class="lazy">
             <section>
                 <h3>Discover us</h3>
                 <a href="../index.html" class="link">Home</a>
-                <a href="categories.html" class="link">Categories</a>
+                <a href="categories.html" class="link">Menu</a>
                 <a href="contacts.html" class="link">Contacts</a>
+                <a href="about.html" class="link">About</a>
             </section>
             <section>
                 <h3>Our social media</h3>
@@ -86,5 +94,7 @@
             </section>
         </div>
     </footer>
+    <script src="../scripts/lazyLoading.js"></script>
+    <script src="../scripts/theme.js"></script>
 </body>
 </html>

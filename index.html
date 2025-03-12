@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/theme.css">
     <title>Mealdrop</title>
 </head>
 <body>
@@ -19,8 +20,14 @@
             <div class="burger__line"></div>
         </div>
         <div class="logo">
-            <img src="assets/images/logo.svg" alt="logo">
+            <img data-src="assets/images/logo.svg" alt="logo" class="lazy">
             <span>MealDrop</span>
+        </div>
+        <div class="lightbulb-container">
+            <div class="lightbulb">
+                <div class="string"></div>
+                <div class="bulb"></div>
+            </div>
         </div>
         <nav>
             <ul>
@@ -36,8 +43,8 @@
             <div class="banner__container">
                 <h2><span>Hungry?</span> Find your next meal</h2>
                 <div class="image-wrapper">
-                    <a href="#award" class="link">See all restaurants</a>
-                    <img src="assets/images/banner.svg" alt="banner" class="banner__image">
+                    <a href="#award" class="link green__link">See all restaurants</a>
+                    <img data-src="assets/images/banner.svg" alt="banner" class="banner__image lazy">
                 </div>
             </div>
         </section>
@@ -45,7 +52,7 @@
             <h3>Our favourite picks</h3>
             <div class="picks">
                 <div class="pick">
-                    <img src="assets/images/cafe.png" alt="cafe">
+                    <img data-src="assets/images/cafe.png" alt="cafe" class="lazy">
                     <div class="description">
                         <h4>Mira</h4>
                         <p class="description__marks">★ 4.2  Very Good</p>
@@ -56,7 +63,7 @@
                     </div>
                 </div>
                 <div class="pick">
-                    <img src="assets/images/cafe.png" alt="cafe">
+                    <img data-src="assets/images/cafe.png" alt="cafe" class="lazy">
                     <div class="description">
                         <h4>Kara Fin</h4>
                         <p class="description__marks">★ 4.2  Very Good</p>
@@ -67,7 +74,7 @@
                     </div>
                 </div>
                 <div class="pick">
-                    <img src="assets/images/cafe.png" alt="cafe">
+                    <img data-src="assets/images/cafe.png" alt="cafe" class="lazy">
                     <div class="description">
                         <h4>‘T Kuyltje</h4>
                         <p class="description__marks">★ 4.2  Very Good</p>
@@ -81,43 +88,43 @@
         </section>
         <section id="award">
             <h2><span>Award winning <br></span>The best restaurants near you!</h2>
-            <a href="#" class="link">See all restaurants</a>
+            <a href="#" class="link green__link">See all restaurants</a>
             <div class="restaurans">
                 <div class="restauran__row">
                     <div class="restauran">
-                        <img src="assets/images/restaurans/lukewarm.jfif" alt="lukewarm">
+                        <img data-src="assets/images/restaurans/lukewarm.jfif" alt="lukewarm" class="lazy">
                         <p>Lukewarm Late</p>
                     </div>
                     <div class="restauran">
-                        <img src="assets/images/restaurans/smokingWeg.png" alt="smokimgWeg">
+                        <img data-src="assets/images/restaurans/smokingWeg.png" alt="smokimgWeg" class="lazy">
                         <p>The Smoking Veg</p>
                     </div>
                     <div class="restauran">
-                        <img src="assets/images/restaurans/artissan.jfif" alt="artissan">
+                        <img data-src="assets/images/restaurans/artissan.jfif" alt="artissan" class="lazy">
                         <p>The Artissan</p>
                     </div>
                 </div>
                 <div class="restauran__row even">
                     <div class="restauran">
-                        <img src="assets/images/restaurans/oneil.jfif" alt="oneil">
+                        <img data-src="assets/images/restaurans/oneil.jfif" alt="oneil" class="lazy">
                         <p>O’Neill’s</p>
                     </div>
                     <div class="restauran">
-                        <img src="assets/images/restaurans/shining.png" alt="shining">
+                        <img data-src="assets/images/restaurans/shining.png" alt="shining" class="lazy">
                         <p>Shining Artichoke</p>
                     </div>
                 </div>
                 <div class="restauran__row">
                     <div class="restauran">
-                        <img src="assets/images/restaurans/woodland.jfif" alt="wwodland">
+                        <img data-src="assets/images/restaurans/woodland.jfif" alt="wwodland" class="lazy">
                         <p>The Woodland</p>
                     </div>
                     <div class="restauran">
-                        <img src="assets/images/restaurans/poma.png" alt="poma">
+                        <img data-src="assets/images/restaurans/poma.png" alt="poma" class="lazy">
                         <p>La Poma</p>
                     </div>
                     <div class="restauran">
-                        <img src="assets/images/restaurans/cafeteria.jfif" alt="cafeteria">
+                        <img data-src="assets/images/restaurans/cafeteria.jfif" alt="cafeteria" class="lazy">
                         <p>Casual Food Cafeteria</p>
                     </div>
                 </div>
@@ -128,27 +135,27 @@
             <a href="pages/categories.html" class="link">View all categories</a>
             <div class="categories__list">
                 <div class="category">
-                    <img src="assets/images/categories/pizza.png" alt="pizza">
+                    <img data-src="assets/images/categories/pizza.png" alt="pizza" class="lazy">
                     <p>Pizza</p>
                 </div>
                 <div class="category">
-                    <img src="assets/images/categories/burger.png" alt="burger">
+                    <img data-src="assets/images/categories/burger.png" alt="burger" class="lazy">
                     <p>Burgers</p>
                 </div>
                 <div class="category">
-                    <img src="assets/images/categories/desert.png" alt="Desserts">
+                    <img data-src="assets/images/categories/desert.png" alt="Desserts" class="lazy">
                     <p>Desserts</p>
                 </div>
                 <div class="category">
-                    <img src="assets/images/categories/sushi.png" alt="sushi">
+                    <img data-src="assets/images/categories/sushi.png" alt="sushi" class="lazy">
                     <p>Sushi</p>
                 </div>
                 <div class="category">
-                    <img src="assets/images/categories/asian.png" alt="asian">
+                    <img data-src="assets/images/categories/asian.png" alt="asian" class="lazy">
                     <p>Asian</p>
                 </div>
                 <div class="category">
-                    <img src="assets/images/categories/comfort.png" alt="comfort">
+                    <img data-src="assets/images/categories/comfort.png" alt="comfort" class="lazy">
                     <p>Comfort food</p>
                 </div>
             </div>
@@ -156,12 +163,13 @@
     </main>
     <footer>
         <div class="footer__container">
-            <img src="assets/images/logo.svg" alt="logo">
+            <img data-src="assets/images/logo.svg" alt="logo" class="lazy">
             <section>
                 <h3>Discover us</h3>
                 <a href="./index.html" class="link">Home</a>
-                <a href="./pages/categories.html" class="link">Categories</a>
+                <a href="./pages/categories.html" class="link">Menu</a>
                 <a href="./pages/contacts.html" class="link">Contacts</a>
+                <a href="./pages/about.html" class="link">About</a>
             </section>
             <section>
                 <h3>Our social media</h3>
@@ -176,5 +184,7 @@
             </section>
         </div>
     </footer>
+    <script src="./scripts/lazyLoading.js" defer></script>
+    <script src="./scripts/theme.js" defer></script>
 </body>
 </html>
